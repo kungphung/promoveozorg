@@ -1,9 +1,10 @@
+{{ tid path="views/components/_toolbar.antlers.html" }}
+
 {{#
 	@name Peak toolbar
 	@desc The Peak toolbar component displaying debug information.
 #}}
 
-<!-- /components/_toolbar.antlers.html -->
 {{ if environment == 'local' }}
     <aside
         class="fixed z-50 bottom-1 right-1 flex text-xs divide-x divide-white shadow-sm divide-solid motion-safe:transition-opacity hover:opacity-100"
@@ -44,4 +45,3 @@
         </button>
     </aside>
 {{ /if }}
-<!-- End: /components/_toolbar.antlers.html -->

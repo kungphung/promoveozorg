@@ -16,3 +16,5 @@ npm-debug.log
 yarn-error.log
 # Comment the following lines if you don't compile your assets on the server:
 /public/build/
+
+/.idea

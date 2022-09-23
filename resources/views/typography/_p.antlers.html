@@ -1,3 +1,5 @@
+{{ tid path="views/typography/_p.antlers.html" }}
+
 {{#
 	@name Paragraph
 	@desc The typography paragraph partial to render a paragraph with `class`, `as`, `color` and `content` attributes.
@@ -7,6 +9,4 @@
     @param class Add custom CSS classes.
 #}}
 
-<!-- /typography/_p.antlers.html -->
 <{{ as or 'p' }} class="mt-0 mb-8 last:mb-0 leading-relaxed {{ color or 'text-neutral' }} {{ class }}">{{ content | nl2br }}</{{ as or 'p' }}>
-<!-- End: /typography/_p.antlers.html -->

@@ -4,7 +4,6 @@
     1. Add `{{ partial:navigation/language_picker }}` as the last list item in the main ul in `resources/views/navigation/_main.antlers.html`.
 #}}
 
-<!-- /navigation/_language_picker.antlers.html -->
 <li
     x-data="{ languagePickerOpen: false }"
     @keyup.escape.stop.prevent="languagePickerOpen = false"
@@ -50,4 +49,3 @@
         {{ /locales }}
     </ul>
 </li>
-<!-- End: /navigation/_language_picker.antlers.html -->

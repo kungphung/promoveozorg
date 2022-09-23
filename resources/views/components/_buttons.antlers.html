@@ -1,3 +1,5 @@
+{{ tid path="views/components/_buttons.antlers.html" }}
+
 {{#
 	@name Buttons
 	@desc Multiple buttons component calling in `resources/vivews/components/_button.antlers.html`.
@@ -5,7 +7,6 @@
     @set page.article.buttons
 #}}
 
-<!-- /components/_buttons.antlers.html -->
 {{ if buttons }}
     {{ if type == 'buttons' }}
         {{# Add a size utility and use different styling when called as a Bard set. #}}
@@ -23,4 +24,3 @@
         </div>
     {{ /if }}
 {{ /if }}
-<!-- End: /components/_buttons.antlers.html -->

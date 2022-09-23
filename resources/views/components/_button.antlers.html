@@ -1,3 +1,5 @@
+{{ tid path="views/components/_button.antlers.html" }}
+
 {{#
 	@name Button attributes
 	@desc A single button component. Faux is used when a button is displayed inside a link (for example in link blocks).
@@ -8,7 +10,6 @@
     @param inverted Boolean. When the button needs inverted styles.
 #}}
 
-<!-- /components/_button.antlers.html -->
 {{ if label }}
     <{{ as or 'a' }}
         {{ slot:attributes }}
@@ -34,4 +35,3 @@
         {{ link_type == 'email' ? { label | obfuscate_email } : label }}
     </{{ as or 'a' }}>
 {{ /if }}
-<!-- End: /components/_button.antlers.html -->

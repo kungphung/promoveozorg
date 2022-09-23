@@ -1,3 +1,5 @@
+{{ tid path="views/typography/_caption.antlers.html" }}
+
 {{#
 	@name Caption
 	@desc The typography caption partial to render a caption with `as` and `caption` attributes.
@@ -7,10 +9,8 @@
     @param class Add custom CSS classes.
 #}}
 
-<!-- /typography/_caption.antlers.html -->
 {{ if caption }}
     <{{ as or 'span' }} class="block mt-2 text-sm {{ color or 'text-neutral' }} {{ class }}">
         {{ caption }}
     </{{ as or 'span' }}>
 {{ /if }}
-<!-- End: /typography/_caption.antlers.html -->
