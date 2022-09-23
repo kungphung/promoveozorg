@@ -1,0 +1,22 @@
+{{#
+	@name Fallback description
+	@desc Get the fallback description for meta, og and twitter.
+#}}
+
+{{ seo:collection_defaults | where('collection', {collection}) }}
+    {{ if fallback == 'field' }}
+        {{ scope:field }}
+            {{ field[field_handle] | strip_tags | trim | safe_truncate(157, '...') }}
+        {{ /scope:field }}
+    {{ elseif fallback == 'custom_text' }}
+        {{ custom_text }}
+    {{ elseif fallback == 'page_builder' }}
+        {{ page_builder limit="1" }}
+            {{ if article }}
+                {{ article | raw | where('type', 'paragraph') | bard_text | trim | safe_truncate(157, '...') }}
+            {{ elseif text }}
+                {{ text | trim | safe_truncate(157, '...') }}
+            {{ /if }}
+        {{ /page_builder }}
+    {{ /if }}
+{{ /seo:collection_defaults }}
